@@ -1,0 +1,55 @@
+/* style.css */
+
+/* Section héros */
+.hero {
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/b7/96/4b/osteriva.jpg?w=500&h=-1&s=1');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Menu images */
+.menu-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+/* Optionnel : effet hover sur les cartes du menu */
+.menu-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
