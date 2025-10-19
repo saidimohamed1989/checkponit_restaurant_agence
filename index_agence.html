@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageExotique - Agence de Voyage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optionnel: Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-- Barre de navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">VoyageExotique</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#voyages">Circuits</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Section Héros -->
+<section class="hero">
+    <div class="hero-content container">
+        <h1 class="display-4">Découvrez le monde avec nous</h1>
+        <p class="lead">Les voyages de vos rêves vous attendent</p>
+        <a href="#destinations" class="btn btn-primary btn-lg">Voir nos destinations</a>
+    </div>
+</section>
+
+<!-- Section Destinations -->
+<section id="destinations" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Nos Destinations</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card destination-card">
+                    <img src="https://cdn.tui.be/img/destinations/Header/frvacance-indonesie.jpg" class="card-img-top" alt="Bali">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali, Indonésie</h5>
+                        <p class="card-text">Plages paradisiaques, temples majestueux et culture fascinante.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card destination-card">
+                    <img src="https://uceap.universityofcalifornia.edu/sites/default/files/marketing-images/life-in-city-images/paris-france-gallery-2.jpg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris, France</h5>
+                        <p class="card-text">La ville de l'amour avec ses monuments emblématiques et sa gastronomie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card destination-card">
+                    <img src="https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">New York, USA</h5>
+                        <p class="card-text">La ville qui ne dort jamais : culture, shopping et divertissement à chaque coin de rue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Voyages / Accordéon -->
+<section id="voyages" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Nos Circuits Organisés</h2>
+        <div class="accordion" id="voyagesAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Circuit Asie Mystique
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#voyagesAccordion">
+                    <div class="accordion-body">
+                        Explorez les trésors cachés d'Asie avec un guide expert.
+                        <a href="#" class="btn btn-link">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        Circuit Europe Classique
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#voyagesAccordion">
+                    <div class="accordion-body">
+                        Visitez les capitales emblématiques d'Europe avec un itinéraire sur mesure.
+                        <a href="#" class="btn btn-link">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        Circuit Amérique du Nord
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#voyagesAccordion">
+                    <div class="accordion-body">
+                        Découvrez les merveilles naturelles et les grandes villes des États-Unis et du Canada.
+                        <a href="#" class="btn btn-link">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Formulaire de contact -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contactez-Nous</h2>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Adresse Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="destination" class="form-label">Destination d'intérêt</label>
+                <select class="form-select" id="destination">
+                    <option selected>Choisir...</option>
+                    <option>Bali</option>
+                    <option>Paris</option>
+                    <option>New York</option>
+                    <option>Autres</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+            </div>
+             <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Pied de page -->
+<footer class="text-center">
+    <div class="container">
+        <p>&copy; 2025 VoyageExotique. Tous droits réservés.</p>
+        <div>
+            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
